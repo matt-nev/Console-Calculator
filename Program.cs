@@ -22,8 +22,19 @@ namespace Calculator
                 Console.WriteLine("Please try again.");
             }
 
-            Console.WriteLine("Enter a number");
-            number1 = Convert.ToInt32(Console.ReadLine());
+            try
+            {
+                Console.WriteLine("Enter a number");
+                number1 = Convert.ToInt32(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("An error occured");
+            }
+            finally
+            {
+                Console.WriteLine("Please try again");
+            }
 
             Console.WriteLine("Enter another number");
             number2 = Convert.ToInt32(Console.ReadLine());
