@@ -6,9 +6,37 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Give me a number");
-            var num = Console.ReadLine();
-            var number = Convert.ToInt32(num);
+            int number1 = 0; int number2 = 0;
+
+            Console.WriteLine("Enter a number");
+            number1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter another number");
+            number2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Choose from the following list:");
+            Console.WriteLine("+ - Add");
+            Console.WriteLine("- - Subtract");
+            Console.WriteLine("* - Multiply");
+            Console.WriteLine("/ - Divide");
+            Console.WriteLine("your pick?");
+
+            switch (Console.ReadLine())
+            {
+                case "+":
+                    Console.WriteLine($"Result: {number1} + {number2} = " + (number1 + number2));
+                    break;
+                case "-":
+                    Console.WriteLine($"Result: {number1} - {number2} = " + (number1 - number2));
+                    break;
+                case "*":
+                    Console.WriteLine($"Result: {number1} * {number2} = " + (number1 * number2));
+                    break;
+                case "/":
+                    Console.WriteLine($"Result: {number1} / {number2} = " + (number1 / number2));
+                    break;
+            }
+
         }
     }
 }
