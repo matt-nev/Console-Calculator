@@ -6,7 +6,7 @@ namespace Calc
     {
         static void Main(string[] args)
         {
-            int number1 = 0; int number2 = 0;
+            double number1 = 0; double number2 = 0;
 
             try
             {
