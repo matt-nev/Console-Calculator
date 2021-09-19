@@ -1,2 +1,2 @@
-# Working-Calculator
+# Console-Calculator
 Working Calculator Using C#
